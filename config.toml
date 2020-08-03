@@ -1,0 +1,9 @@
+baseURL = "https://www.glintstream.com/"
+languageCode = "en-us"
+title = "blog.glintstream"
+theme = "aether"
+
+[params]
+    brand = "blog.glintstream"
+    description = "Thoughts of a Software Enthusiast"
+    rssinmenu = true
