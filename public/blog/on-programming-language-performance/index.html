@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>On Programming Language Performance</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Just the facts ma&#39;am">
+  
+  <meta name="author" content="GlintStream, Inc">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+  <!-- top header -->
+  <div class="top-header bg-secondary pt-2 pb-1">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- social icons -->
+        <div class="col-lg-6 col-md-6 text-center text-md-left">
+          <span class="text-white">Connect With Us:</span>
+          <ul class="list-inline d-inline-block">
+            
+            <li class="list-inline-item"><a class="text-white d-inline-block p-2" href=""><i class="fa fa-twitter"></i></a></li>
+            
+          </ul>
+        </div>
+        <!-- mail and phone -->
+        <div class="col-lg-6 col-md-6 text-md-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item mx-0 border-right border-secondary"><a class="text-white d-inline-block px-lg-3 px-2" href="mailto:"></a></li>
+            <li class="list-inline-item mx-0"><a class="text-white d-inline-block px-lg-3 px-2" href="tel:">Call Now: <span class="text-primary"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /top header -->
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="/images/logo.png" alt="glintstream"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          <!-- search -->
+          <div class="search px-4">
+            <button id="searchOpen" class="search-btn"><i class="fa fa-search text-dark"></i></button>
+            <div class="search-wrapper">
+              <form action="/search">
+                <input class="search-box form-control" id="search-query" name="s" type="search" placeholder="Type &amp; Hit Enter...">
+              </form>
+              <button id="searchClose" class="search-close"><i class="fa fa-close text-dark"></i></button>
+            </div>
+          </div>
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay" style="background-image: url('/images/backgrounds/page-title.webp'),url('/images/backgrounds/page-title.jpg'),url('/images/backgrounds/page-title.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-white mb-3">On Programming Language Performance</h2>
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">On Programming Language Performance</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        <div class="position-relative mb-5">
+          <img src="/"  onerror="this.src='\/images\/blog\/knuckle-up.jpg'" alt="post thumb" class="img-fluid w-100">
+           <div class="card-type">Comp-Sci</div>
+        </div>
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark"></strong>/ on <strong class="text-dark">24 Aug 2020</strong></div>
+        <h2>On Programming Language Performance</h2>
+        <div class="content">
+          <p><a href="https://projecteuler.net/">Project Euler</a> is a series of increasingly difficult Mathematical questions/puzzles that tends to scratch the problem solving itch that many programmer are afflicted with. While they can usually be brute forced via computer programs usually they have an elegant solution that can be worked out with just a pencil and paper. As such at least for programmers it really is up to the individual how much deep thought versus straight coding they want to do, which, I think makes for a pretty good learning curve. When you cant figure out the elegant solution, you can usually find a brute force way through it; When you cant brute force it, you have to sit back, think and usually you can come up with an elegant efficient way to solve the problem. This is pretty similar to the real life challenges in programming really get resolved, first try to come up with a &lsquo;good&rsquo; way to do things, if not then just resolve it by brute force, finally when necessary put in deep thought and or research to really find an efficient solution.</p>
+<p>So with that being said, going to look at <a href="https://projecteuler.net/problem=1">Euler Problem #1</a>:</p>
+<blockquote>
+<p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+Find the sum of all the multiples of 3 or 5 below 1000.</p>
+</blockquote>
+<p>I remember in fifth grade, my math teacher showed us a very small Basic program (no clue which specific Basic, but it ran on MS-DOS so&hellip;) that would count up to 1 million and print the numbers to the screen. The most awe inspiring part of the lesson was not the program, but the fact that he had to leave the program running until the next day in order for it to complete. Really impressed upon us not only the power of computer programs, but also the shear immensity of the number 1 million. Big ups to Mr Weinstein. I tried to recreate the experience for my son a few years ago, but alas the program finished REALLY quickly. I guess that comes down to Moore&rsquo;s law spoiling the awesomeness of the number 1,000,000, let alone 1000.</p>
+<p>So in honor of these realities, and because I also want to look at some basic performance comparisons across languages, and in celebration of the inventors of the most powerful and important computing system in the history of the earth lets bump that 1000 up to 10,000,000 (a crore). An before anyone questions wether Hindu-Arabic is arguably the most important computing system invented by humankind, quick tell me what is <a href="http://mathforum.org/library/drmath/view/65638.html">MCMLXXXVII divided by XVIII</a>? I&rsquo;ll wait, might take a couple hours for you to work out if you dont convert to a place value based system with a representation of zero that allows finite mechanical application of a small set of basic rules to resolve long division. Long division doesn&rsquo;t just fall out of all number systems. This number system is what made calculation, beyond hands and toes possible for the vast majority of society. So for the shear democratization of arithmetic and advancement of mathematics both practical and academic that this system allowed, I think it easily ranks as number 1 computing system in human history. But I digress&hellip;</p>
+<p>Let&rsquo;s get down the summing up all the multiples of 3 or 5 below 10,000,000.</p>
+<h2 id="powershell">PowerShell</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">$max = 10000000 - 1 
+$sum = 0
+
+1..$max | 
+    ? { (( $_ % 3 ) <span style="color:#f92672">-eq</span> 0) <span style="color:#f92672">-or</span> (($_ % 5) <span style="color:#f92672">-eq</span> 0) } | 
+    % { $sum += $_ } 
+
+$sum 
+</code></pre></div><p>Kind of painful to read, and this is not even the most compressed way to write this in PowerShell. I actually added line breaks and broke out the sum variable to make it a little easier to read. Being 100% fair, the syntax of powershell is optimized for quick input of &lsquo;fire and forget&rsquo; dispatches at the command line. Every ugly weird magically shortcut here, I wouldnt trade away from the language at all because of the speed at which you can crank out PowerShell one liners. But its still ugly and hard to read.</p>
+<p>I checked the performance with <a href="https://github.com/sharkdp/hyperfine">hyperfine</a>. Why? Well programs execution is fairly nondeterministic. It can depend on a hundred different things, mostly commonly related to caching/optimizations that the program runtime has made, or contention for resources during execution. As such it is often necessary to let the code execute a bit to &lsquo;warm up&rsquo; and then also to actually execute a reasonable number of times to determine the average run time and variance. hyperfine does this kind of thing for you, without having to do any special coding on your part. The results looked like below:</p>
+<pre><code>❯ hyperfine 'pwsh .\powershell\euler.ps1'
+Benchmark #1: pwsh .\powershell\euler.ps1                                       0
+  Time (mean ± σ):     135.411 s ±  3.449 s    [User: 0.0 ms, System: 5.1 ms]   0
+  Range (min … max):   131.319 s … 142.754 s    10 runs
+</code></pre><p>Which is pretty significantly slow run on modern hardware clock in at over 2 minutes. I wasnt able to find incredible detail on how PowerShell actually executes, but at a minimum I know there is an interpreter that does a LOT of dynamic indirection related to PSObject and PSCustomObject, and then calls down to .Net code that has to be compiled down (I am assuming) to <a href="https://docs.microsoft.com/en-us/dotnet/standard/managed-execution-process">Microsoft Intermediate Language</a>, and then on execution that MSIL has to be JIT&rsquo;ed (Just In Time converted) to native machine code. It seems at least niavely that this has to be on a line by line basis to enable PowerShell to function as a shell. As such I wasnt surprised it was slow but how slow is slow?</p>
+<p>I was curious to see how another &lsquo;slow&rsquo; interpreted language peformed:</p>
+<h2 id="python">Python</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">max <span style="color:#f92672">=</span> <span style="color:#ae81ff">10000000</span>
+sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, max):
+    <span style="color:#66d9ef">if</span> i<span style="color:#f92672">%</span><span style="color:#ae81ff">3</span><span style="color:#f92672">==</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> i<span style="color:#f92672">%</span><span style="color:#ae81ff">5</span><span style="color:#f92672">==</span><span style="color:#ae81ff">0</span>:
+        sum <span style="color:#f92672">+=</span> i
+<span style="color:#66d9ef">print</span>(str(sum))
+</code></pre></div><p>Wow so much more readable, I think perhaps a complete non programmer could look at this and have a decent idea of what is going on, only real headscratchers would be the % modulus functions, the == and += symbol.</p>
+<pre><code>❯ hyperfine 'python .\python\euler.py'
+Benchmark #1: python .\python\euler.py                                         0
+  Time (mean ± σ):      1.100 s ±  0.036 s    [User: 2.9 ms, System: 6.2 ms]   0
+  Range (min … max):    1.065 s …  1.147 s    10 runs
+</code></pre><p>Whats widely regarded as the slowest mainstream programming language is over 100 times faster on this microbenchmark. Even in the realm of popular interpreted dynamic languages such as JavaScript, Lua, Perl, Python is considered dog slow. And lets be crystal clear here:</p>
+<blockquote>
+<p>Microbenchmarks mean nothing to anything except the very specific exact lines of code in question</p>
+</blockquote>
+<p>But still 2 orders of magnitude faster, on very simple looping and integer arithmetic.</p>
+<p>That got me much more curious, what about a decently performant programming language? C# is a relatively performant statically typed compiled language that executes on a virtual machine with a garbage collector.</p>
+<h2 id="c">C#</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> System;
+
+<span style="color:#66d9ef">namespace</span> euler_dotnet
+{
+    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>
+    {
+        <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> Main(<span style="color:#66d9ef">string</span>[] args)
+        {
+            <span style="color:#66d9ef">int</span> max = <span style="color:#ae81ff">10000000</span>;
+            Int64 sum = <span style="color:#ae81ff">0</span>;
+            <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i=<span style="color:#ae81ff">0</span>; i &lt; max; i++)
+            {
+                <span style="color:#66d9ef">if</span>(((i % <span style="color:#ae81ff">3</span>)==<span style="color:#ae81ff">0</span>)||((i % <span style="color:#ae81ff">5</span>)==<span style="color:#ae81ff">0</span>))
+                {
+                    sum += i;
+                }
+            }
+            Console.WriteLine(sum.ToString());
+        }
+    }
+}
+</code></pre></div><p>First thing we are going to notice looking at the code is how verbose it is, probably 50% of the code is just boilerplate that really has nothing to do with the actually problem we are trying to solve. It is an extremely explict language, thats for sure. Lets see how it performs though.</p>
+<pre><code>❯ dotnet build --configuration Release .\dotnet\
+❯ hyperfine 'python '.\dotnet\bin\Release\netcoreapp3.1\euler.exe'
+Benchmark #2: .\dotnet\bin\Release\netcoreapp3.1\euler.exe
+  Time (mean ± σ):      56.5 ms ±   0.6 ms    [User: 0.9 ms, System: 2.9 ms]   0
+  Range (min … max):    55.9 ms …  59.6 ms    46 runs   
+</code></pre><p>About 19 times faster than Python off rip. Maybe the trade off between verbosity and performance is worth it. If we are being REALLY fair we also should note the build step, thats the lines that go dotnet build etc. The build step does eat up time on its own. Especially in exploritory development the constant code, build, wait, execute cycle really does slow down development when you take into account a developer does this cycle hundreds of times a day. Both Python and PowerShell, just do the magic to make your code actually execute at runtime.</p>
+<p>I wanted to go one level deeper, and see how a language that compiles down to a single native executable that doesnt depend on a garbage collector. I chose Rust because, frankly last time I tried to teach my 16 year old son C, it blue screened my computer. So lets try the much safer low level language that has been stackoverflow&rsquo;s <a href="https://insights.stackoverflow.com/survey/2019#technology-_-most-loved-dreaded-and-wanted-languages">Most Loved Programming Language</a> for 3 years in a row.</p>
+<h2 id="rust">Rust</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#66d9ef">let</span> max <span style="color:#f92672">=</span> <span style="color:#ae81ff">10000000</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">i64</span>;
+    <span style="color:#66d9ef">for</span> i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span>..max {
+        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+            sum <span style="color:#f92672">+=</span> i;
+        }
+    }
+
+    println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;{}&#34;</span>,sum);   
+}
+</code></pre></div><p>Before we even run it, stands out that it is pretty near to python in readability, sure there are semicolumns everywhere, and the weird 0i64 but&hellip; not anywhere as ugly as PowerShell, nor as long winded as C#.</p>
+<p>How does it run though?</p>
+<pre><code>❯ cargo build --manifest-path .\rust\Cargo.toml --release
+❯ hyperfine '.\rust\target\release\euler.exe'
+Benchmark #1: .\rust\target\release\euler.exe                                 0
+  Time (mean ± σ):      15.5 ms ±   0.2 ms    [User: 1.0 ms, System: 3.8 ms]  0
+  Range (min … max):    15.0 ms …  16.1 ms    143 runs
+</code></pre><p>So about 3.6 times faster than C#, about 70 times faster than Python, and about 9,000 times faster than PowerShell. Thats pretty fast. Must be pretty much as fast as possible right?</p>
+<h2 id="math">Math</h2>
+<p>This series is tagged <a href="https://www.glintstream.com/categories/comp-sci">comp-sci</a> for a reason, so in the next posts we are going to try to apply the <a href="https://www.amazon.com/Queen-Sciences-Mathematics-David-Bressoud/dp/159803426X">Queen of the Sciences</a> to help speed up this calculation for us.</p>
+<p>I leave off with the Gza Genius:</p>
+<blockquote>
+<p>At the height of their fame and glory, they turned on one another<br>
+Each struggling in vain for ultimate supremacy<br>
+In the passion and depth of their struggle<br>
+The very art that had raised them to such Olympian heights was lost</p>
+</blockquote>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/PJqou7PFTk0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            
+            <li class="list-inline-item"><a class="text-color" href="/tags/programming">Programming</a>,</li>
+            
+          </ul>
+        </div>
+        
+        
+        <div class="mt-5">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "glintstream" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+        
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest Article</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="/blog/on-programming-language-performance/"><img class="mr-3 post-thumb-sm" src="/images/blog/knuckle-up.jpg"></a>
+      <div class="media-body">
+        <a href="/blog/on-programming-language-performance/">
+          <h5 class="mt-0">On Programming Language Performance</h5>
+        </a>
+        24 Aug 2020
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="/blog/hyperautomation/"><img class="mr-3 post-thumb-sm" src="/images/blog/hyperautomation.jpg"></a>
+      <div class="media-body">
+        <a href="/blog/hyperautomation/">
+          <h5 class="mt-0">HyperAutomation</h5>
+        </a>
+        01 Aug 2020
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="/blog/strategic-foci/"><img class="mr-3 post-thumb-sm" src="/images/blog/young-mike-tyson.gif"></a>
+      <div class="media-body">
+        <a href="/blog/strategic-foci/">
+          <h5 class="mt-0">Strategic Foci</h5>
+        </a>
+        01 Aug 2020
+      </div>
+    </div>
+    
+  </div>
+  <!-- categories -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Category</h4>
+    <ul class="list-styled style-circle">
+      <li class="border-bottom border-color"><a href="/categories/comp-sci" class="text-color d-block pb-3 mt-3 text-decoration-none">Comp sci</a></li>
+      <li class="border-bottom border-color"><a href="/categories/square-biz" class="text-color d-block pb-3 mt-3 text-decoration-none">Square biz</a></li>
+    </ul>
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Tags</h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/business">Business</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/programming">Programming</a></li>
+    </ul>
+  </div>
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  
+        
+        
+          
+          
+          
+          
+            
+            
+            
+            
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">Copyright © 2020 <a href="https://www.glintstream.com">GlintStream</a></p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  var indexURL = "/index.json"
+</script>
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="/plugins/jQuery/jquery.min.js"></script>
+
+<script src="/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="/plugins/slick/slick.min.js"></script>
+
+<script src="/plugins/google-map/gmap.js"></script>
+
+<script src="/plugins/venobox/venobox.min.js"></script>
+
+<script src="/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="/plugins/search/fuse.min.js"></script>
+
+<script src="/plugins/search/mark.js"></script>
+
+<script src="/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="/js/script.min.js"></script>
+
+<!-- google analitycs -->
+</body>
+
+</html>
