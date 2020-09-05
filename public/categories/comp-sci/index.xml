@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [GlintStream](https://www.glintstream.com)</copyright>
-    <lastBuildDate>Mon, 24 Aug 2020 21:07:29 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2020 21:07:29 -0400</lastBuildDate>
     
 	<atom:link href="/categories/comp-sci/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>On Programming Language Performance</title>
       <link>/blog/on-programming-language-performance/</link>
-      <pubDate>Mon, 24 Aug 2020 21:07:29 -0400</pubDate>
+      <pubDate>Sun, 30 Aug 2020 21:07:29 -0400</pubDate>
       
       <guid>/blog/on-programming-language-performance/</guid>
       <description>Project Euler is a series of increasingly difficult Mathematical questions/puzzles that tends to scratch the problem solving itch that many programmer are afflicted with.</description>

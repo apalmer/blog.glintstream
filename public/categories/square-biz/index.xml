@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [GlintStream](https://www.glintstream.com)</copyright>
-    <lastBuildDate>Sat, 01 Aug 2020 21:07:29 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 21:07:29 -0400</lastBuildDate>
     
 	<atom:link href="/categories/square-biz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Democratization</title>
+      <link>/blog/democratization/</link>
+      <pubDate>Sat, 15 Aug 2020 21:07:29 -0400</pubDate>
+      
+      <guid>/blog/democratization/</guid>
+      <description>How a self-trained junior non-developer out delivered an entire IT department.</description>
+    </item>
+    
+    <item>
       <title>HyperAutomation</title>
       <link>/blog/hyperautomation/</link>
-      <pubDate>Sat, 01 Aug 2020 21:07:29 -0400</pubDate>
+      <pubDate>Fri, 07 Aug 2020 21:07:29 -0400</pubDate>
       
       <guid>/blog/hyperautomation/</guid>
       <description>Hype or Automation? That&amp;rsquo;s a good question, as there seems to be a wide range of answers.</description>
@@ -24,7 +33,7 @@
     <item>
       <title>Strategic Foci</title>
       <link>/blog/strategic-foci/</link>
-      <pubDate>Sat, 01 Aug 2020 21:07:29 -0400</pubDate>
+      <pubDate>Wed, 05 Aug 2020 21:07:29 -0400</pubDate>
       
       <guid>/blog/strategic-foci/</guid>
       <description>Foundation of Execution On the startup side of the industry, the most commonly talked about business strategies revolve around Disruption.</description>

@@ -2,11 +2,11 @@
 
 <html lang="en-us"><head>
   <meta charset="utf-8">
-  <title>HyperAutomation</title>
+  <title>Democratization</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I for one welcome our robotic overlords">
+  <meta name="description" content="GlintStream">
   
   <meta name="author" content="GlintStream, Inc">
   <meta name="generator" content="Hugo 0.74.3" />
@@ -120,12 +120,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="text-white mb-3">HyperAutomation</h2>
+        <h2 class="text-white mb-3">Democratization</h2>
         <!-- breadcrumb -->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent p-0">
             <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
-            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">HyperAutomation</li>
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">Democratization</li>
           </ol>
         </nav>
       </div>
@@ -141,16 +141,64 @@
       <div class="col-lg-8">
         <!-- post thumb -->
         <div class="position-relative mb-5">
-          <img src="/"  onerror="this.src='\/images\/blog\/hyperautomation.jpg'" alt="post thumb" class="img-fluid w-100">
+          <img src="/"  onerror="this.src='\/images\/blog\/democratization.png'" alt="post thumb" class="img-fluid w-100">
            <div class="card-type">Square-Biz</div>
         </div>
-        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark"></strong>/ on <strong class="text-dark">01 Aug 2020</strong></div>
-        <h2>HyperAutomation</h2>
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark"></strong>/ on <strong class="text-dark">15 Aug 2020</strong></div>
+        <h2>Democratization</h2>
         <div class="content">
-          <h2 id="democratization">Democratization</h2>
+          <h3 id="how-a-self-trained-junior-non-developer-out-delivered-an-entire-it-department">How a self-trained junior non-developer out delivered an entire IT department.</h3>
+<p>You read the byline and thought: <em>bullshit</em>, or if you were being generous maybe: <em>hyperbole</em>. Maybe, just <em>maybe</em>, you thought well it might of happened with an exceptional &lsquo;junior&rsquo; in age, but &lsquo;senior&rsquo; in skills developer. Even if you gave it credence, you figured this was a one off exception that was not repeatable.</p>
+<p>Reality is it isn&rsquo;t bullshit or hyperbole. The junior non developer was not particularly talented technology wise. Further this isnt a one off, this same scenario played out at least four times over the course of a 3 month span.</p>
+<p>Even more fundamentally important: this scenario is playing out day in and day out, in organizations both large and small, across all business sectors and geographies.</p>
+<p>Forget the model of offshoring to find technical resources at a cut rate price, business departments are moving to a model of just doing the technical work themselves having found enterprise Information Technology resources to be to slow.</p>
+<img class="img-fluid d-block mx-auto" src="../../../images/blog/slow-enterprise-it.jpg" onerror="this.src=''" alt="post thumb">
+<h3 id="lets-walk-through-the-scenario-step-by-step-and-you-tell-me-if-this-sounds-familiar">Let&rsquo;s walk through the scenario step by step, and you tell me if this sounds familiar:</h3>
+<p>Business department X works intimately with popular 3rd party Analytics data. This data is so important that eventually they want to pull down the data from the 3rd party to be able to store it internally and perform more intensive processing/reporting/analytics/visualization of the historical data.</p>
+<p><strong>Project Planning</strong>
+They approach their enterprise IT department to do help them out with this. The Business gets directed to the IT Project Management Office (PMO). PMO puts together a project plan, schedules a meeting with the business, collects some semblence of requirements, packages the project plan and requirements together, and puts it in a queue to be prioritized for work by IT management, this takes <em><strong>1 week</strong></em>. The Business need is not directly tied to a major initiative that IT is being judged by at the C Level, and the Business requestor doesn&rsquo;t have a personal relationship with anyone in IT to get their need prioritized. So this package of work gets prioritized as low, and sits in the IT backlog for <em><em>3 months</em></em>. Honestly, 3 months is a good deal in this scenario, usually once a low priority item enters the enterprise IT backlog it NEVER gets worked on.</p>
+<p><strong>Development</strong>
+Eventually this project ends up on the desk of whatever team is responsible for the enterprise&rsquo;s Electronic Load and Transform (ETL), lets call them the Data team.  The Data team looks at the high level requirements, notices some inconsistencies/gaps in the requirements, and sends it to PMO for a Business Analyst (BA) to work out with the Business. This happens a couple times, taking in total <em><strong>1 week</strong></em>.</p>
+<p>The Data team eventually gets consistent requirments they can understand, and start development of an ETL process leveraging whatever is their standard enterprise toolkit, In this case they are a &lsquo;MicroSoft Shop&rsquo; so lets say their stack is:</p>
+<ul>
+<li>Secure <a href="https://www.digitaltrends.com/computing/what-is-ftp-and-how-do-i-use-it/">FTP</a> for moving the files into the enterprise network</li>
+<li><a href="https://searchsqlserver.techtarget.com/definition/Microsoft-SSIS-SQL-Server-Integration-Services">SQL Server Integration Services</a> to pick up and transform the data</li>
+<li><a href="https://www.microsoft.com/en-us/sql-server/sql-server-2016">MicroSoft SQL Server</a> to store the data</li>
+<li><a href="https://docs.microsoft.com/en-us/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports?view=sql-server-ver15">SQL Server Reporting Services</a> to display the report and allow download of the raw data in various formats</li>
+</ul>
+<p>The actual development of whatever ETL process takes <em><strong>1 week</strong></em></p>
+<p><strong>Testing</strong>
+Now its ready to be QA&rsquo;ed, well not really because of course there is the need to set up Development, QA, Staging and Production instances of the SQL Server database. Including setting up the necessary environments, QA team review of the requirements and development of test cases, and actually executing the test cases takes another <em><strong>1 week</strong></em></p>
+<p>It passes QA it is done! We just need to move it to Production!</p>
+<p><strong>User Testing</strong>
+It goes to User Acceptance Testing at which point the Business gets their first look at their reports, and wouldnt you know it, it just doesnt meet expectations. The report&rsquo;s don&rsquo;t lay out the data right, the report takes too long to run, there is duplicate data coming in that needs to be deduplicated, there are tons of missing fields that need to have default values, the reports parameters dont allow slicing the data the way the business needs. Of cource a big sprinkling of plan and simple requirements changes in addition. Got to send it back for some more development, some more QA and then another Business review. Another <em><strong>1 week</strong></em>.</p>
+<p><strong>Change Management</strong>
+Moving it to Production involves getting firewalls opened, whitelisting IPs for SFTP access, shared network drives allocated, domain accounts provisioned, etc. The Data team needs the Infrastructure team to get involved, and the Infrastructure team has its own process requiring change management tickets, approvals from high level management, and the like, so throw on another <em><strong>1 week</strong></em>.</p>
+<p>During the mandated Change Manegement Meeting before the release to Production, the Security hears about the project for the first time. The Security team starts to ask questions. What type of data is being stored? Is there any customer personally identifiable information (PII)? How is the data at rest secured? How is the data in flight protected? All these questions have to be answered and if any gaps encountered remediated. So lets throw on another <em><strong>1 week</strong></em>.</p>
+<p>It finally passes Change Management and is delivered to Production!</p>
+<p><strong>RollOut</strong>
+Immediately the process crashes, turns out Production wasn&rsquo;t identical to Development, and the sample data that the system was designed around wasn&rsquo;t really representative of data the 3rd party was actually sending. Another final <em><strong>1 week</strong></em> cleaning all of this up to get it working reliably.</p>
+<p>Yeah! Adding all that time up, <em><strong>5 months</strong></em> from the Business&rsquo;s perspective between when they engaged IT and they were able to get the process reliably in place.</p>
+<p>If you have any experience with Enterprise Information Technology I am sure you were rolling your eyes every single time I mentioned an additional <em><strong>1 week</strong></em>. You understood this to, first off be a very optimistic estimate for any of these tasks, and secondly a common refrain for late projects. As in &lsquo;Yes, we missed the deadline but we just have to push through 1 more week to get it out. It&rsquo;s never really <em><strong>1 week</strong></em> is it?</p>
+<h2 id="the-project-is-effectively-dead-at-this-point-the-business-need-came-and-went-the-competitor-already-pulled-in-their-data-leveraged-it-and-got-whatever-competative-advantage-there-was-to-get">The project is effectively dead at this point, the business need came and went. The Competitor already pulled in their data, leveraged it, and got whatever competative advantage there was to get.</h2>
+<p>The Competitor&rsquo;s Business had already been burned by their IT Department, so they didnt even bother to go to them in the first place. They got one of their younger less expensive knowledge workers to just manually collect the data.</p>
+<h2 id="he-didnt-know-any-better">He didnt know any better&hellip;</h2>
+<p>So he just assumed the task was supposed to be simple. He asked the third party to send him emails with the data as attachements. He started getting the data every day as a &lsquo;CSV&rsquo; file. His company was also a &lsquo;MicroSoft Shop&rsquo; so he imported it into his Office 365 Excel app. He tweaked the data in Excel dropping rows and cleaning it up.</p>
+<p>He made some charts but, wanted something he didnt need to send files around with, that he could share as a link in the browser. A couple google searches later and he had his data pumped into <a href="https://powerbi.microsoft.com/en-us/">Power BI</a> and created his first dashboard. When he showed it to his direct manager, it was so compelling and so cheap that there wasnt a second thought to get approval to get Power BI associated to his Office 365 account.</p>
+<p>He was getting tired of constantly uploading CSV files, so he spent some more time googling, found a tutorial and learned how to use <a href="https://flow.microsoft.com/en-us/">Power Automate</a> to upload the attachements of any email he received with a specific subject to Power BI. There was all kinds of weird data issues that were discovered over time, constantly tweaked his Power BI dashboard until it was what his team needed. It took him <em><strong>2 weeks</strong></em> start to finish. It worked so well he got tasked with 3 other integrations back to back, all of which he was able to bang out in weeks not months.</p>
+<p>Eventually the dashboards became widely used and the data became so important that it needed to be centralized, only at that point did they engage their enterprise IT department, who was able to integrate it into the organization&rsquo;s <a href="https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/power-bi-integration">MicroSoft Dynamics 365</a> via a few clicks of administrative user interface without any custom development or new infrastructure.</p>
+<h2 id="the-names-have-been-changed-to-protect-the-guilty">The names have been changed to protect the guilty</h2>
+<p>The specifics might differ but the story is real, and these scenarios are playing out day by day. Tasks that once required cooridination between experts on multiple enterprise IT teams are now being done by individual technology novices. There isn&rsquo;t the disconnect and disappointment at the end of the cycle because the business expert is beyond involved in the process he is the actual implementer.</p>
+<p>But what about security, what about change management, what about dedicated QA, what about all the patterns and practices of ETL developers who have made this their career bring to the table? All valid points, but fundamentally, these concerns are subservient to the business needs. There is no business leader I am aware of that would prefer to wait 5 months for a dashboard he can have in 2 weeks. In the words of the legend&hellip;</p>
+<blockquote>
+<p>If lovin&rsquo; you is wrong<br>
+I don&rsquo;t wanna be right<br>
+If being right means being without you<br>
+I&rsquo;d rather live a wrong doing life</p>
+</blockquote>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/nF1bQE2k3Go" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/mn1qF4aC71U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -198,12 +246,22 @@
     <!-- post-item -->
     
     <div class="media border-bottom border-color pb-3 mb-3">
-      <a href="/blog/democratization/"><img class="mr-3 post-thumb-sm" src="/images/blog/hyperautomation.jpg"></a>
+      <a href="/blog/on-programming-language-performance/"><img class="mr-3 post-thumb-sm" src="/images/blog/knuckle-up.jpg"></a>
+      <div class="media-body">
+        <a href="/blog/on-programming-language-performance/">
+          <h5 class="mt-0">On Programming Language Performance</h5>
+        </a>
+        30 Aug 2020
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="/blog/democratization/"><img class="mr-3 post-thumb-sm" src="/images/blog/democratization.png"></a>
       <div class="media-body">
         <a href="/blog/democratization/">
-          <h5 class="mt-0">HyperAutomation</h5>
+          <h5 class="mt-0">Democratization</h5>
         </a>
-        01 Aug 2020
+        15 Aug 2020
       </div>
     </div>
     
@@ -213,17 +271,7 @@
         <a href="/blog/hyperautomation/">
           <h5 class="mt-0">HyperAutomation</h5>
         </a>
-        01 Aug 2020
-      </div>
-    </div>
-    
-    <div class="media border-bottom border-color pb-3 mb-3">
-      <a href="/blog/strategic-foci/"><img class="mr-3 post-thumb-sm" src="/images/blog/young-mike-tyson.gif"></a>
-      <div class="media-body">
-        <a href="/blog/strategic-foci/">
-          <h5 class="mt-0">Strategic Foci</h5>
-        </a>
-        01 Aug 2020
+        07 Aug 2020
       </div>
     </div>
     
@@ -232,6 +280,7 @@
   <div class="bg-white px-4 py-5 box-shadow mb-5">
     <h4 class="mb-4">Category</h4>
     <ul class="list-styled style-circle">
+      <li class="border-bottom border-color"><a href="/categories/comp-sci" class="text-color d-block pb-3 mt-3 text-decoration-none">Comp sci</a></li>
       <li class="border-bottom border-color"><a href="/categories/square-biz" class="text-color d-block pb-3 mt-3 text-decoration-none">Square biz</a></li>
     </ul>
   </div>
@@ -240,6 +289,7 @@
     <h4 class="mb-4">Tags</h4>
     <ul class="list-inline tag-list">
       <li class="list-inline-item"><a class="hover-ripple" href="/tags/business">Business</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/programming">Programming</a></li>
     </ul>
   </div>
 </aside>
