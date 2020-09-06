@@ -244,14 +244,14 @@ Benchmark #1: .\rust\target\release\euler.exe                                 0
 <h2 id="math">Math</h2>
 <p>This series is tagged <a href="https://www.glintstream.com/categories/comp-sci">comp-sci</a> for a reason, so lets try to apply the <a href="https://www.amazon.com/Queen-Sciences-Mathematics-David-Bressoud/dp/159803426X">Queen of the Sciences</a> to help speed up this calculation for us.</p>
 <p><strong>What&rsquo;s our overall strategy for figuring out?</strong></p>
-<p>So lets try to divide and conquor this problem by breaking this problem down into simpler problems. An obvious first step is with the multiples of 3:</p>
+<p>Lets try to divide and conquor this problem by breaking it down into simpler problems. An obvious first step is with the multiples of 3:</p>
 <p>3 + 6 + 9 + 12 + 15 + &hellip; up to whatever the largest multiple of 3 is thats less than 10,000,000</p>
 <p>I can make a reasonable guess for the largest multiple of 3 less than 10,000,000 just off the top of my head, but I wouldn&rsquo;t necessarily know &lsquo;how&rsquo; I figured it out.</p>
 <p><strong>When in doubt go back to first principals. What&rsquo;s the definition of the terms you are using?</strong></p>
 <p>The largest multiple of 3 less than 10,000,000 is literally the largest number less than 10,000,000 that can be divided by 3 perfectly. Lets start with 10,000,000/3 = 3,333,333.333333&hellip; the decimal is the part that didnt perfectly divide. So just throwing that away by rounding down we get 3,333,333. If we multiply by 3 x 3,333,333 we get 9,999,999 as the largest multiple of 3 thats less than 10,000,000.</p>
 <p>We didnt use any special properties of the number 3 or 10,000,000 to get here, so this seems to be a general rule: The largest multiple of any number (Y) less than some number (MAX) is always going to be = Y times the whole number part of MAX/Y. The round down function is often in programming languages called the&rsquo;floor&rsquo; and multiplication is commonly shown in programming languages by the symbol &lsquo;*&rsquo;. So Y * floor(MAX/Y).</p>
-<p><strong>Can we check that is valid?</strong></p>
-<p>Find out what our largest multiple of 5 less than 10,000,000 is by applying this formula 5 * floor(10,000,000/5) = 10,000,000. Which is NOT less than 10,000,000. Turns out that we were using a special property of 3 ad 10,000,000, that 3 doesn&rsquo;t evenly divide 10,000,000. We can patch this edge case by just subtracting 1 from the MAX to guarantee we truly only look for multiples less than MAX.</p>
+<p><strong>Can we check that thid is valid?</strong></p>
+<p>Lets apply this to find out what the largest multiple of 5 less than 10,000,000 is by applying the formula 5 * floor(10,000,000/5) = 10,000,000. Which is NOT less than 10,000,000. Turns out that we were using a special property of 3 ad 10,000,000, that 3 doesn&rsquo;t evenly divide 10,000,000. We can patch this edge case by just subtracting 1 from the MAX to guarantee we truly only look for multiples less than MAX.</p>
 <p>multiple of Y less than MAX = Y * floor((MAX-1)/Y)</p>
 <p>Back to our problem:</p>
 <p>3 + 6 + 9 + 12 + 15 + &hellip; + 9,999,999 still is a mystery. Maybe we can find some form of this sequence that is more basic? At its simplest it just the 3 multiplication table:</p>
@@ -279,9 +279,10 @@ Benchmark #1: .\rust\target\release\euler.exe                                 0
 <blockquote>
 <p>By asking yourself the right questions at the right time you can raise your IQ by 20 points.</p>
 </blockquote>
-<p>I often see developers cramming to master specific algorithms to nail interviews, I personally think that this information is great to know, but it&rsquo;s more important to learn how to go about problem solving. A great resource to move from relying purely on intuition to solve problems into a more structured approach is the classic by <a href="https://www.amazon.com/How-Solve-Aspect-Mathematical-Method/dp/0691023565">How to Solve It</a> by Poyla.</p>
+<p>I often see developers cramming to master specific algorithms to nail interviews. I personally think that this information is great to know, but it&rsquo;s more important to learn how to go about problem solving. A great resource to move from relying purely on intuition to solve problems into a more structured approach is the classic by <a href="https://www.amazon.com/How-Solve-Aspect-Mathematical-Method/dp/0691023565">How to Solve It</a> by Poyla.</p>
 <img class="img-fluid d-block mx-auto" src="../../../images/blog/how-to-solve-it.jpg" onerror="this.src=''" alt="post thumb">
-<p>In PowerShell this would look like:</p>
+<p>#The last shall become first</p>
+<p>In PowerShell our more sophisticated approach would look like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">$max    = 10000000 - 1
 
 $threes = 3 * (<span style="color:#66d9ef">[math]</span>::Floor($max / 3))*(<span style="color:#66d9ef">[math]</span>::Floor($max / 3) + 1) / 2
@@ -294,7 +295,7 @@ $threes + $fives - $fifteens
 Benchmark #1: pwsh .\powershell\empty.ps1                                      0
   Time (mean ± σ):     339.4 ms ±   5.4 ms    [User: 0.0 ms, System: 5.7 ms]   1
   Range (min … max):   333.6 ms … 351.3 ms    10 runs
-</code></pre><p>PowerShell provides its own tooling to measure timing of commands called Measure-Command which will handily exclude the raw start up time of powershell executing an empty file. Also the faster languages like C# and Rust have a compilation step. It turns out PowerShell also has an implicit compilation step, the first time you execute something in PowerShell it is MUCH slower than subsequent executions. For this reason I am going to execute the statement 1 time, and then take the average of 10 runs of the PowerShell calculation being executed.</p>
+</code></pre><p>PowerShell provides its own tooling to measure timing of commands called unoriginally enough, Measure-Command. Measure-Command will allow you to handily exclude the raw start up time of powershell executing an empty file from your benchmark. Also the faster languages like C# and Rust have a compilation step. It turns out PowerShell also has an implicit compilation step, the first time you execute something in PowerShell it is MUCH slower than subsequent executions. For this reason I am going to execute the statement 1 time, and then take the average of 10 runs of the PowerShell calculation being executed.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">$max    = 10000000 
 
 <span style="color:#66d9ef">function</span> calculate {
@@ -328,12 +329,12 @@ Maximum           : 5.7032
 Minimum           : 0.0586
 StandardDeviation : 1.77348886911897
 Property          : TotalMilliseconds
-</code></pre><p>So we are able to get approximately the same performance with our slowest language PowerShell (14.46 ms) as our fastest language Rust (15.5 ms) if we only look at intial execution. If we exclude the compilation step for each of these, the gap in performance wides, with the algorithmically sophisticated PowerShell being about 20 times faster than the niave Rust implementation.</p>
+</code></pre><p>So we are able to get approximately the same performance with our slowest language PowerShell (14.46 ms) as our fastest language Rust (15.5 ms) if we only look at intial execution. If we exclude the compilation step for each of these laguages, the gap in performance widens, with the algorithmically sophisticated PowerShell being about 20 times faster than the niave Rust implementation.</p>
 <h1 id="what-did-we-learn">What did we learn?</h1>
 <p>Well really we just experimentally proved a couple old adadges in Computer Science/Programming.</p>
-<p>Number 1 : Pretty much all modern programming langauges are fast enough. Even dirt slow PowerShell&rsquo;s niave implementation clocking in around 2 minutes is probably less than the amount of time it would take implement the code, compile it and run it in the fastest language Rust. If you really just need the value one time they are all &lsquo;fast&rsquo; enough.</p>
-<p>Number 2 : If speed really does matter, applying an efficient algorithm to the bottlenecks of your system is going to have way bigger impact than just rewriting the whole thing in a fast language.</p>
-<p>Number 3 : PowerShell is slow as hell</p>
+<p><strong>Number 1</strong> : Pretty much all modern programming langauges are fast enough. Even dirt slow PowerShell&rsquo;s niave implementation clocking in around 2 minutes is probably less than the amount of time it would take implement the code, compile it and run it in the fastest language Rust. If you really just need the value one time they are all &lsquo;fast&rsquo; enough.</p>
+<p><strong>Number 2</strong> : If speed really does matter, applying an efficient algorithm to the bottlenecks of your system is going to have way bigger impact than just rewriting the whole thing in a fast language.</p>
+<p><strong>Number 3</strong> : PowerShell is slow as hell</p>
 <p>I leave off with the Gza Genius:</p>
 <blockquote>
 <p>At the height of their fame and glory, they turned on one another<br>
