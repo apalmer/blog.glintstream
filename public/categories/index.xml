@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [GlintStream](https://www.glintstream.com)</copyright>
-    <lastBuildDate>Sun, 30 Aug 2020 21:07:29 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2020 21:07:29 -0400</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tutorial</title>
+      <link>/categories/tutorial/</link>
+      <pubDate>Sun, 06 Sep 2020 21:07:29 -0400</pubDate>
+      
+      <guid>/categories/tutorial/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>comp-sci</title>

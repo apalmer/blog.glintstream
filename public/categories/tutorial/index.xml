@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorial on glintstream</title>
+    <link>/categories/tutorial/</link>
+    <description>Recent content in tutorial on glintstream</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 [GlintStream](https://www.glintstream.com)</copyright>
+    <lastBuildDate>Sun, 06 Sep 2020 21:07:29 -0400</lastBuildDate>
+    
+	<atom:link href="/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started With Python</title>
+      <link>/blog/python/</link>
+      <pubDate>Sun, 06 Sep 2020 21:07:29 -0400</pubDate>
+      
+      <guid>/blog/python/</guid>
+      <description>They say the best way to learn a language is by immersion so lets kick this off with a hands on explorator lab.</description>
+    </item>
+    
+  </channel>
+</rss>

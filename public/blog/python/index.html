@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Getting Started With Python</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="GlintStream">
+  
+  <meta name="author" content="GlintStream, Inc">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+  <!-- top header -->
+  <div class="top-header bg-secondary pt-2 pb-1">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- social icons -->
+        <div class="col-lg-6 col-md-6 text-center text-md-left">
+          <span class="text-white">Connect With Us:</span>
+          <ul class="list-inline d-inline-block">
+            
+            <li class="list-inline-item"><a class="text-white d-inline-block p-2" href=""><i class="fa fa-twitter"></i></a></li>
+            
+          </ul>
+        </div>
+        <!-- mail and phone -->
+        <div class="col-lg-6 col-md-6 text-md-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item mx-0 border-right border-secondary"><a class="text-white d-inline-block px-lg-3 px-2" href="mailto:"></a></li>
+            <li class="list-inline-item mx-0"><a class="text-white d-inline-block px-lg-3 px-2" href="tel:">Call Now: <span class="text-primary"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /top header -->
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="/images/logo.png" alt="glintstream"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          <!-- search -->
+          <div class="search px-4">
+            <button id="searchOpen" class="search-btn"><i class="fa fa-search text-dark"></i></button>
+            <div class="search-wrapper">
+              <form action="/search">
+                <input class="search-box form-control" id="search-query" name="s" type="search" placeholder="Type &amp; Hit Enter...">
+              </form>
+              <button id="searchClose" class="search-close"><i class="fa fa-close text-dark"></i></button>
+            </div>
+          </div>
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay" style="background-image: url('/images/backgrounds/page-title.webp'),url('/images/backgrounds/page-title.jpg'),url('/images/backgrounds/page-title.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-white mb-3">Getting Started With Python</h2>
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">Getting Started With Python</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        <div class="position-relative mb-5">
+          <img src="/"  onerror="this.src='\/images\/blog\/python.jpg'" alt="post thumb" class="img-fluid w-100">
+           <div class="card-type">Tutorial</div>
+        </div>
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark"></strong>/ on <strong class="text-dark">06 Sep 2020</strong></div>
+        <h2>Getting Started With Python</h2>
+        <div class="content">
+          <p>They say the best way to learn a language is by immersion so lets kick this off with a hands on explorator lab. The purpose of this lab is to get you into the tools and give you the minimum &lsquo;vocabulary&rsquo; to start crawling in Python. Once you start crawling you can walk, run and then fly, but this process all starts with baby steps. So lets GO!</p>
+<h2 id="number-1---get-python">Number 1 - Get Python</h2>
+<p>First step is you need Python. You want Python 3, you can find the download for your operating system here: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+<p>There are other ways to get Python, especially if you are planning to do a lot of data analysis or artificial intelligence related things you may want to check out <a href="https://docs.anaconda.com/anaconda/install/windows/">Anaconda</a>. This distribution includes the core Python language, but it also includes many data science related packages and tools. Perhaps most importantly it includes the <a href="https://jupyter.org/">Jupyter</a> notebook framework which allows you to interactively work with Python code, literate descriptions of you code, generate and embed visualizations all in the same pane of glass as your python code, and then easily share your notebooks with others.</p>
+<p>Feel free to start with either Python distribution, but this lab aims to be as simple as possible, so any screenshots, etc will be for the baseline Python distribution.</p>
+<h2 id="number-2---lauch-the-interactive-python-shell">Number 2 - Lauch the Interactive Python Shell</h2>
+<p>I think the instant feedback provided by the Python Shell is immensely valuable for exploration and for beginners it gets you working with the language primatives right away. If you are already familiar with shells in general all you have to do is launch your shell of choice and type &lsquo;python&rsquo;. If you have no clue what a shell is, just go to your OS&rsquo;s app launcher and type &lsquo;IDLE&rsquo;.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;</span> python
+Python <span style="color:#ae81ff">3.8</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span> (tags<span style="color:#f92672">/</span>v3<span style="color:#f92672">.</span><span style="color:#ae81ff">8.5</span>:<span style="color:#ae81ff">580</span>fbb0, Jul <span style="color:#ae81ff">20</span> <span style="color:#ae81ff">2020</span>, <span style="color:#ae81ff">15</span>:<span style="color:#ae81ff">57</span>:<span style="color:#ae81ff">54</span>) [MSC v<span style="color:#f92672">.</span><span style="color:#ae81ff">1924</span> <span style="color:#ae81ff">64</span> bit (AMD64)] on win32
+Type <span style="color:#e6db74">&#34;help&#34;</span>, <span style="color:#e6db74">&#34;copyright&#34;</span>, <span style="color:#e6db74">&#34;credits&#34;</span> <span style="color:#f92672">or</span> <span style="color:#e6db74">&#34;license&#34;</span> <span style="color:#66d9ef">for</span> more information<span style="color:#f92672">.</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span>
+</code></pre></div><p>When you are done with the shell you can EXIT as follows want:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> exit()
+</code></pre></div><p>The first few things we will look at are filesystem related. Python has a &lsquo;batteries included&rsquo; paradigm where the standard python distribution includes the ability to do almost all the common tasks you are likely to need. However, in general Python will not load every single piece of functionality at launch. In general you will often have to tell Python to enable a specific piece of functionality.</p>
+<h3 id="file-system-basics">File System Basics</h3>
+<p>In this case to enable Operating System level functionality such as the file system access, we need to tell Python to IMPORT the &lsquo;os&rsquo; package.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> os
+</code></pre></div><p>Now we can see where in the file system we currently are by GETting the Current Working Directory:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> os<span style="color:#f92672">.</span>getcwd()
+<span style="color:#e6db74">&#39;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">Users</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">glintstream&#39;</span>
+</code></pre></div><p>Move to the directory where we want to store our lab files at by CHanging our DIRectory:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> os<span style="color:#f92672">.</span>chdir(<span style="color:#e6db74">&#39;c:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">dev&#39;</span>)
+</code></pre></div><p>Investigating what directories and files are in this location by LISTng the DIRectory contents:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> os<span style="color:#f92672">.</span>listdir()
+[<span style="color:#e6db74">&#39;comp-sci&#39;</span>, <span style="color:#e6db74">&#39;intro-to-python&#39;</span>]
+</code></pre></div><p>Creating a workspace for the lab by MaKing a new DIRectory, and then CHanging to that DIRectory:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> os<span style="color:#f92672">.</span>mkdir(<span style="color:#e6db74">&#39;python-lab&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> os<span style="color:#f92672">.</span>chdir(<span style="color:#e6db74">&#39;python-lab&#39;</span>)
+</code></pre></div><p>Creating a descriptive README.md file for our lab by OPENing a file in Write mode, WRITEing some content, and then CLOSEing the file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> readme <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#39;README.md&#39;</span>,<span style="color:#e6db74">&#39;w&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> readme<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#39;# Introduction to Python Lab #&#39;</span>)
+<span style="color:#ae81ff">30</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> readme<span style="color:#f92672">.</span>close()
+</code></pre></div><p>Note that when working with files it is EXTREMELY important that you always close files that you open, if not you can encounter all kinds of bad situations. In this case the the contents of the file are not actually written to the file system until the file is closed.</p>
+<p>To see the contents of the file, we OPEN the file in Read mode, and then READ all LINES, and then CLOSE the file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> content <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#39;README.md&#39;</span>,<span style="color:#e6db74">&#39;r&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> content<span style="color:#f92672">.</span>readlines()
+[<span style="color:#e6db74">&#39;# Introduction to Python Lab #&#39;</span>]
+<span style="color:#f92672">&gt;&gt;&gt;</span> content<span style="color:#f92672">.</span>close()
+</code></pre></div><h3 id="subprocesses-basics">Subprocesses Basics</h3>
+<p>When coding it is common to want to be able to try out different approaches, sometimes these approaches don&rsquo;t work out, and you want to go back to a previous version of your code. <a href="https://git-scm.com/">Git</a>. It is pretty easy to execute other executables as subprocesses when working with Python</p>
+<p>We tell Python to IMPORT the &lsquo;subprocess&rsquo; package</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> subprocess
+</code></pre></div><p>Next we tell the SUBPROCESS package to OPEN a Process with the &lsquo;git&rsquo; executable and pass it &lsquo;init&rsquo; as a parameter:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">subprocess<span style="color:#f92672">.</span>Popen([<span style="color:#e6db74">&#39;git&#39;</span>,<span style="color:#e6db74">&#39;init&#39;</span>])
+</code></pre></div><p>We tell the SUBPROCESS package to OPEN a Process with the &lsquo;git&rsquo; executable and pass it &lsquo;add&rsquo; and &lsquo;.&rsquo; as parameters:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">subprocess<span style="color:#f92672">.</span>Popen([<span style="color:#e6db74">&#39;git&#39;</span>,<span style="color:#e6db74">&#39;add&#39;</span>,<span style="color:#e6db74">&#39;.&#39;</span>])
+</code></pre></div><p>Finally we tell the SUBRPROCESS package to OPEN a Process with the &lsquo;git&rsquo; executable and pass it the &lsquo;commit&rsquo;, &lsquo;-m&rsquo; and &lsquo;Initial Commit&rsquo; as parameters:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">subprocess<span style="color:#f92672">.</span>Popen([<span style="color:#e6db74">&#39;git&#39;</span>,<span style="color:#e6db74">&#39;commit&#39;</span>,<span style="color:#e6db74">&#39;-m&#39;</span>, <span style="color:#e6db74">&#39;Initial Commit&#39;</span>])
+</code></pre></div><h2 id="number-3---3rd-party-packages">Number 3 - 3rd Party packages</h2>
+<p>The next basic part of vocabulary you are going to need is the ability to access the web. It is possible to do this with built in Python packages but the most commonly used web access package is not part of the standard Python distribution. This serves as a good place to cover the important concept of how you can work with 3rd party packages.</p>
+<p>If you havent done so already you should exit the Python interactive shell:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> exit()
+</code></pre></div><p>Before you can &lsquo;import&rsquo; a Python package in your own code, it needs to be &lsquo;installed&rsquo; on your workstation. &lsquo;Installed&rsquo; in this case basically means the file with contents of the package needs to be in specific locations that the Python distribution is aware of. This model is pretty simple but it leads to a challenge: Over time you will have many different Python projects on your workstation with many different unrelated 3rd party packages. Keeping track of what project uses what 3rd party packages can very quickly become virtually impossible. To help with this, typically in Python you are going to create a separate &lsquo;Virtual Environment&rsquo; for each of your Python projects. This way each project&rsquo;s 3rd Party dependencies will be available to the individual project but isolated from all other projects.</p>
+<h3 id="virtual-environments">Virtual Environments</h3>
+<p>A Python virtual environment is actually a fairly simple affair, basically it is two parts: 
+1. A completely separate directory with the entire Python distribution is copied somewhere onto your hard drive. 
+2. The system path environment variable for the current process is updated so that its first entry is the path to the virtual env&rsquo;s Python executable</p>
+<p>You can create this from a standard shell (as opposed to the Python Interactive Shell):</p>
+<p>Tell PYTHON to use the Module VENV to create a new virtual environment in the directory .PROJECT-VIRTUAL-ENVIRONMENT</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">&gt; python -m venv .project-virtual-environment
+</code></pre></div><p>You have to actually enable to new virtual environment before you can use it, by executing the ACTIVATE (activate.bat on windows, activate.sh on linux) script in the .PROJECT-VIRTUAL-ENVIRONMENT&rsquo;s SCRIPT directory</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">&gt; .\.project-virtual-environment\Scripts\activate
+</code></pre></div><p>When you are done with the virtual environment you can disable it by executing the DEACTIVATE command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">&gt; deactivate
+</code></pre></div><h3 id="package-installer-for-python">Package Installer for Python</h3>
+<p>Python has a built in tool for installing packages called &lsquo;pip&rsquo;. Pip basically searches Python&rsquo;s Package Archive (PyPA), finds the pacakge you are interested in, and downloads the package to a location when the currently executing Python can find it.</p>
+<p>Tell PIP to INSTALL the REQUESTS package</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">pip install requests
+</code></pre></div><p>Tell PIP To LIST all the packages that are currenty</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">pip list
+</code></pre></div><p>It is common to want to export the list of packages needed by a Python project. Typically this is used when you need to want to share a project with others, its more convient to just provide a list of packages they need rather than providing an entire copy of the your whole virtual environment. This is especially common when using Source Control, to avoid checking in large number of extraneous python scripts and binaries.</p>
+<p>Tell PIP to FREEZE the current requirements and redirect the listing to a file called REQUIREMENTS.TXT</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">pip freeze &gt; requirements.txt
+</code></pre></div><p>Later you can install the current requirements of a Python project</p>
+<p>Tell PIP to INSTALL Requirements from the file REQUIREMENTS.TXT</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">pip install -r requirements.txt
+</code></pre></div><h2 id="number-4---python-modules">Number 4 - Python Modules</h2>
+<p>Typically one is going to execute a program multiple times across multiple days, in those cases it doesnt really make sense to retype your program over and over again in the Python Interactive Shell. In these cases you would save your program as a Python module.</p>
+<p>A Python module is just a text file with the extension &lsquo;.py&rsquo;</p>
+<p>Create a new file named &lsquo;hello.py&rsquo; and open this file in your text editor of choice. Add the following text to the file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;hello from a python module&#39;</span>)
+</code></pre></div><p>From your standard shell (as opposed to the Python Interactive Shell, tell PYTHON to execute HELLO.PY</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">&gt; python .\hello.py
+hello from a python module
+</code></pre></div><h3 id="parameters">Parameters</h3>
+<p>A program that doesn&rsquo;t allow inputs is very limited, it will always do the same exact thing everytime it is executed. There are many ways to provide inputs to programs but a common one is via command line arguements.</p>
+<p>The &lsquo;sys&rsquo; module has the facility to access arguements passed to a python module.</p>
+<p>IMPORT the SYS package</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> sys
+</code></pre></div><p>Set the variable called NAME using the SYS package&rsquo;s 2nd(tricky) ARGuement Value</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">name <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]
+</code></pre></div><p>PRINT the string HELLO concatenated to the value of the variable called NAME</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;hello, &#39;</span> <span style="color:#f92672">+</span> name)
+</code></pre></div><p>Tell PYTHON to execute HELLO.PY with the argument STRANGER</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">&gt; python .\hello.py Stranger
+hello, Stranger
+</code></pre></div><h3 id="interacting-with-the-web">Interacting with the web</h3>
+<p>From here on out for the rest of this lab you can chose wether you prefer to program Python from the interactive shell or via python file, the same commands work either way.</p>
+<p>IMPORT the REQUESTS package</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> requests
+</code></pre></div><p>Use the REQUESTS package to execute a http GET of the resource HTTPS://WWW.GOOGLE.COM and store it in a variable called RESPONSE</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;https://www.google.com&#39;</span>)
+</code></pre></div><p>From here you can examine various fields on the RESPONSE, such as the STATUS_CODE or the TEXT:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">&gt;&gt;&gt; response.status_code
+200
+&gt;&gt;&gt; response.text
+<span style="color:#960050;background-color:#1e0010">&#39;</span>&lt;!doctype html&gt;&lt;html itemscope=<span style="color:#e6db74">&#34;&#34;</span> itemtype=<span style="color:#e6db74">&#34;http://schema.org/WebPage&#34;</span> lang=<span style="color:#e6db74">&#34;en&#34;</span>&gt;...
+</code></pre></div><h1 id="number-5---do-something-with-these-fundamental-building-blocks">Number 5 - Do something with these fundamental building blocks</h1>
+<p>You have learned how to:</p>
+<ol>
+<li>Use the Interactive Python Shell</li>
+<li>Import and Use Built-in Python Packages</li>
+<li>Install, Import an Use 3rd Party Python Packages</li>
+<li>Use external command line tools from Python</li>
+<li>Create Python Modules</li>
+<li>Pass command line arguments to Python Modules</li>
+<li>Do basic file operations</li>
+<li>Do basic web requests</li>
+<li>Print text to the standard output</li>
+</ol>
+<p>You should be able to:</p>
+<ol>
+<li>Create a Python Module that takes an url as input and saves the raw html of the website to a file</li>
+<li>Take the url of an image as an input and download the image and send it to an image compression command line tool like <a href="https://imagemagick.org/index.php">ImageMagik</a></li>
+</ol>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            
+            <li class="list-inline-item"><a class="text-color" href="/tags/python">Python</a>,</li>
+            
+          </ul>
+        </div>
+        
+        
+        <div class="mt-5">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "glintstream" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+        
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest Article</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="/blog/python/"><img class="mr-3 post-thumb-sm" src="/images/blog/python.jpg"></a>
+      <div class="media-body">
+        <a href="/blog/python/">
+          <h5 class="mt-0">Getting Started With Python</h5>
+        </a>
+        06 Sep 2020
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="/blog/on-programming-language-performance/"><img class="mr-3 post-thumb-sm" src="/images/blog/knuckle-up.jpg"></a>
+      <div class="media-body">
+        <a href="/blog/on-programming-language-performance/">
+          <h5 class="mt-0">On Programming Language Performance</h5>
+        </a>
+        30 Aug 2020
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="/blog/democratization/"><img class="mr-3 post-thumb-sm" src="/images/blog/democratization.png"></a>
+      <div class="media-body">
+        <a href="/blog/democratization/">
+          <h5 class="mt-0">Democratization</h5>
+        </a>
+        15 Aug 2020
+      </div>
+    </div>
+    
+  </div>
+  <!-- categories -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Category</h4>
+    <ul class="list-styled style-circle">
+      <li class="border-bottom border-color"><a href="/categories/comp-sci" class="text-color d-block pb-3 mt-3 text-decoration-none">Comp sci</a></li>
+      <li class="border-bottom border-color"><a href="/categories/square-biz" class="text-color d-block pb-3 mt-3 text-decoration-none">Square biz</a></li>
+      <li class="border-bottom border-color"><a href="/categories/tutorial" class="text-color d-block pb-3 mt-3 text-decoration-none">Tutorial</a></li>
+    </ul>
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Tags</h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/business">Business</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/programming">Programming</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/python">Python</a></li>
+    </ul>
+  </div>
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  
+        
+        
+          
+          
+          
+          
+            
+            
+            
+            
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">Copyright © 2020 <a href="https://www.glintstream.com">GlintStream</a></p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  var indexURL = "/index.json"
+</script>
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="/plugins/jQuery/jquery.min.js"></script>
+
+<script src="/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="/plugins/slick/slick.min.js"></script>
+
+<script src="/plugins/google-map/gmap.js"></script>
+
+<script src="/plugins/venobox/venobox.min.js"></script>
+
+<script src="/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="/plugins/search/fuse.min.js"></script>
+
+<script src="/plugins/search/mark.js"></script>
+
+<script src="/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="/js/script.min.js"></script>
+
+<!-- google analitycs -->
+</body>
+
+</html>
